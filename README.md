@@ -41,7 +41,7 @@ It enables data-driven decision-making for business growth, retention strategy, 
 ---
 
 ## **Project Screenshots**
-![Revenue Leakage & Retention Risk Intelligence.png](Revenue Leakage & Retention Risk Intelligence.png)
+![Dashboard Screenshot](./)
 
 ---
 
