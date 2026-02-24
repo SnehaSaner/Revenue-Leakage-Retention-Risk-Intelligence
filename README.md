@@ -2,6 +2,10 @@
 
 **A comprehensive Power BI dashboard that helps businesses identify revenue leakages, track customer retention, and optimize profitability across regions, segments, and product categories.**
 
+## 📊 Dashboard Preview
+
+![Dashboard Preview](DASHBOARD.png)
+
 ---
 
 ## **Project Overview**
@@ -37,12 +41,6 @@ It enables data-driven decision-making for business growth, retention strategy, 
 - **Power BI Desktop** (v2026)
 - DAX for KPI calculations and dynamic measures  
 - Conditional formatting and interactive slicers  
-
----
-
-## 📊 Dashboard Preview
-
-![Dashboard Preview](DASHBOARD.png)
 
 ---
 
