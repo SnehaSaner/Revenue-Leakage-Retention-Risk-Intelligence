@@ -40,8 +40,9 @@ It enables data-driven decision-making for business growth, retention strategy, 
 
 ---
 
-## **Project Screenshots**
-![Dashboard Screenshot](DASHBOARD.png)
+## 📊 Dashboard Preview
+
+![Dashboard Preview](DASHBOARD.png)
 
 ---
 
