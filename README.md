@@ -1,6 +1,8 @@
 # Revenue Leakage & Retention Risk Intelligence Dashboard
 
-**A comprehensive Power BI dashboard that helps businesses identify revenue leakages, track customer retention, and optimize profitability across regions, segments, and product categories.**
+A SQL-powered Business Intelligence solution designed to identify revenue leakage, measure customer retention risk, and optimize profitability across regions, segments, and product categories.
+
+---
 
 ## 📊 Dashboard Preview
 
@@ -8,52 +10,117 @@
 
 ---
 
-## **Project Overview**
-This dashboard provides actionable insights into:
+## 🗂 Project Structure
 
-- Revenue contribution by customer segments
-- Impact of discounts on profitability
-- Revenue lost due to negative profits
-- Retention rate vs target
-- Regional and category-wise revenue & profit trends
-
-It enables data-driven decision-making for business growth, retention strategy, and financial optimization.
-
----
-
-## **Key Features**
-- **Interactive KPI cards**: Total Revenue, Total Profit, AOV, Retention Rate, Revenue Leakage %  
-- **Customer insights**: Revenue contribution by segment and category  
-- **Revenue leakage analysis**: Impact of discounts and negative profit trends  
-- **Regional and market analysis**: Revenue and profit by region & market  
-- **Time trends**: Monthly revenue and retention tracking  
-- **Dynamic slicers**: Year, Region, Category, Segment for real-time filtering  
+```
+Revenue-Leakage-Project/
+│
+├── dataset/
+│   └── global_superstore.csv
+│
+├── sql/
+│   └── revenue_project.sql
+│
+├── powerbi/
+│   └── dashboard.pbix
+│
+└── README.md
+```
 
 ---
 
-## **Dataset**
-- Cleaned dataset of orders, customers, products, sales, discounts, and shipping costs  
-- Columns include: Order ID, Customer ID, Product, Sales, Profit, Discount, Shipping Cost, Region, Segment, Category, Sub-category, Order Priority  
+## 🏗 Data Architecture
+
+Raw transactional CSV data was imported into MySQL for structured processing and KPI computation.
+
+The SQL layer performs:
+- Data cleaning & schema standardization
+- Revenue leakage detection logic
+- Retention rate computation
+- Aggregated KPI view generation
+
+Power BI is directly connected to the MySQL database for live analytical reporting.
+
+**Pipeline Flow:**
+
+```
+CSV Data → MySQL (Cleaning + KPI Views) → Power BI Dashboard
+```
 
 ---
 
-## **Technology & Tools**
-- **Power BI Desktop** (v2026)
-- DAX for KPI calculations and dynamic measures  
-- Conditional formatting and interactive slicers  
+## 🎯 Project Objective
+
+To build a backend-driven analytics dashboard that enables businesses to:
+
+- Detect revenue loss from negative-profit transactions  
+- Analyze the impact of discount strategies  
+- Track customer retention against defined targets  
+- Monitor profitability across markets and product categories  
 
 ---
 
-## **Insights / Business Value**
-- Identifies segments and regions where revenue is at risk  
-- Highlights discount strategies that negatively impact profit margins  
-- Tracks retention rate against goals, identifying gaps for corrective action  
-- Provides a visual, interactive, and executive-ready dashboard for stakeholders  
+## 📌 Key KPIs
+
+- Total Revenue  
+- Total Profit  
+- Average Order Value (AOV)  
+- Retention Rate vs Target  
+- Revenue Leakage %  
+- Profit Margin  
 
 ---
 
-## **How to Use**
-1. Clone the repo  
-2. Open the PBIX file in Power BI Desktop  
-3. Use slicers to filter data by year, region, category, or segment  
-4. Hover on charts to see detailed tooltips and insights  
+## 🔍 Core Features
+
+- Executive KPI summary cards  
+- Revenue contribution by customer segment  
+- Category-level revenue vs profit comparison  
+- Revenue leakage analysis from high-discount transactions  
+- Monthly trend analysis  
+- Region & market performance tracking  
+- Dynamic slicers for real-time filtering  
+
+---
+
+## 🛠 Technologies Used
+
+- **MySQL** – Data import, transformation, KPI view creation  
+- **SQL** – Aggregation, conditional logic, subqueries  
+- **Power BI Desktop** – Interactive dashboard development  
+- **DAX** – Advanced KPI calculations  
+
+---
+
+## 💡 Business Impact
+
+- Identified revenue leakage driven by negative-profit orders  
+- Enabled data-backed discount optimization strategy  
+- Provided retention visibility for proactive customer strategy  
+- Delivered executive-ready reporting for performance monitoring  
+
+---
+
+## ▶️ How to Run This Project
+
+1. Import the dataset into MySQL.
+2. Execute `revenue_project.sql` to create required tables and analytical logic.
+3. Open `dashboard.pbix` in Power BI Desktop.
+4. Connect Power BI to your local MySQL database.
+5. Interact with slicers to explore insights dynamically.
+
+---
+
+## 📈 Future Enhancements
+
+- Predictive churn modeling using Python
+- Automated refresh via Power BI Service
+- Advanced cohort retention analysis
+- Margin sensitivity simulation for discount strategies
+
+---
+
+## 👩‍💻 Author
+
+Sneha Saner  
+Aspiring Data Analyst | SQL | Power BI | Business Intelligence
