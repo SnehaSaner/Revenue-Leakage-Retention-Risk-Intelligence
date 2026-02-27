@@ -1,4 +1,4 @@
-# Revenue Leakage & Retention Risk Intelligence Dashboard
+# Revenue Leakage Analysis \& Customer Retention Risk Modeling
 
 A SQL-powered Business Intelligence solution designed to identify revenue leakage, measure customer retention risk, and optimize profitability across regions, segments, and product categories.
 
